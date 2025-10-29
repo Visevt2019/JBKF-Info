@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JBKF About</title>
+  <style>
+    :root{
+      --bg:#071025; --card:#0b1220; --accent:#ff6b6b; --muted:#98a0b3;
+      --radius:12px; --sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      font-family:var(--sans); background:
+      radial-gradient(900px 400px at 8% 8%, rgba(255,107,107,0.03), transparent 6%),
+      linear-gradient(180deg,#020617 0%, #071025 100%); color:#e6eef8;
+      -webkit-font-smoothing:antialiased; padding:36px;
+    }
+    .container{max-width:900px;margin:0 auto}
+    header{margin-bottom:18px}
+    h1{margin:0;font-size:24px;letter-spacing:0.2px}
+    .subtitle{color:var(--muted);margin-top:8px;font-size:13px}
+    .card{
+      background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.02));
+      padding:20px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.02); margin-bottom:12px;
+    }
+    h2{margin:0 0 8px 0;font-size:16px}
+    p{margin:0 0 12px 0;color:var(--muted);line-height:1.5}
+    .note{font-size:13px;color:#8fa0b8}
+    @media (max-width:640px){
+      body{padding:20px}
+      h1{font-size:20px}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-label="JBKF Archive information">
+    <header>
+      <h1>About JBKF</h1>
+      <div class="subtitle">Click here to visit JBKF archive</div>
+    </header>
+
+    <section class="card" aria-labelledby="about-heading">
+      <h2 id="about-heading">About JBKF</h2>
+      <p><strong>Overview:</strong> The JBKF Archive preserves saga chapters, meme packs, chat logs, and curated notes for reference and portfolio use.</p>
+      <p><strong>Purpose:</strong> Document the story beats, provide a single place for downloads, and record contributor credits without exposing editing on this page.</p>
+    </section>
+
+    <section class="card" aria-labelledby="sections-heading">
+      <h2 id="sections-heading">Sections</h2>
+      <p><strong>Core Files:</strong> jbkf-ch1.md; meme-pack.zip; curation-notes.pdf</p>
+      <p><strong>Saga Notes:</strong> 2025-10-13 — Chapter 1 released. 2025-10-17 — Community remix. 2025-10-25 — Curated edition prepared.</p>
+      <p class="note">This page is intentionally static. To update content, edit the repository files (README or HTML) and redeploy.</p>
+    </section>
+
+    <section class="card" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact / Contribution</h2>
+      <p><strong>Contributors:</strong> List contributor names and links in the repository README or project metadata.</p>
+      <p><strong>How to contribute:</strong> Fork the repo and open a pull request on GitHub. This page does not accept edits directly.</p>
+    </section>
+
+    <footer style="color:var(--muted);font-size:13px;margin-top:10px">
+      Static display only • JBKF Archive
+    </footer>
+  </main>
+</body>
+</html>
